@@ -1106,7 +1106,7 @@ const ASSET_OFFICE='Офис.jpg';
    Сюжет: диалог → теория → интерактив → результат.
    Эпизоды 9 и 10 содержат по два отдельных блока теории/игры.
    ============================================================ */
-const CINEMA_BOSS = 'Margarita.png';
+const CINEMA_BOSS = 'margarita.png';
 const CINEMA_VOVA = ASSET_VOVA;
 const CINEMA_OFFICE = ASSET_OFFICE;
 
@@ -3723,7 +3723,7 @@ var observer=new MutationObserver(function(records){if(records.every(function(r)
 /* External files only. Fresh URLs on every opening prevent stale local image cache. */
 (function(){
   var stamp=Date.now();
-  var names=['Винтажный телевизор с пустым экраном.png','Вова.png','Марго.png','Margarita.png','Офис.jpg','Оля.png','Игорь.png'];
+  var names=['Винтажный телевизор с пустым экраном.png','Вова.png','Марго.png','margarita.png','Офис.jpg','Оля.png','Игорь.png'];
   function fresh(url){
     if(!url || /^data:|^blob:|^https?:/i.test(url))return url;
     return url+(url.indexOf('?')<0?'?':'&')+'image_revision='+stamp;
